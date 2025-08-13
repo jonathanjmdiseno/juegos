@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuestionario de Acentuación Española</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Evalúa tu Acentuación Española</h1>
+        <div class="timer" id="timer">Tiempo restante: <span id="time">60</span>s</div>
+        <div class="question-area">
+            <p id="question-text"></p>
+            <div id="options-container" class="options-grid">
+                </div>
+            <input type="text" id="text-input" placeholder="Escribe la palabra correcta aquí" style="display:none;">
+            <button id="submit-btn" style="display:none;">Comprobar</button>
+            <div id="feedback" class="feedback-message"></div>
+            <button id="next-btn" class="nav-button">Siguiente Pregunta</button>
+            <button id="restart-btn" class="nav-button" style="display:none;">Reiniciar Cuestionario</button>
+        </div>
+        <div class="results-area" style="display:none;">
+            <h2>Resultados Finales</h2>
+            <p>Tu puntuación: <span id="final-score">0</span>/<span id="total-questions">0</span></p>
+            <div id="answer-summary"></div>
+        </div>
+    </div>
+    <script src="quizData.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
